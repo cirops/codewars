@@ -20,11 +20,3 @@ const pfib = (n) => {
     ? (f[n] = pfib(k) * pfib(k) + pfib(k - 1n) * pfib(k - 1n))
     : (f[n] = (2n * pfib(k - 1n) + pfib(k)) * pfib(k));
 };
-
-console.log("fib 0", fib(0), 0n);
-console.log("fib 1", fib(1), 1n);
-console.log("fib 2", fib(2), 1n);
-console.log("fib 3", fib(3), 2n);
-console.log("fib 4", fib(4), 3n);
-console.log("fib 5", fib(5), 5n);
-console.log("fib -6", fib(-6), -8n);
